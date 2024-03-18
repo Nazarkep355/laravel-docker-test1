@@ -21,7 +21,7 @@ class TestController extends Controller
            return redirect('test');
        }
        else
-           return redirect(route('loginForm'));
+           return redirect()->back()->withErrors(['email'=>'Back credits']);
     }
     public function loginForm()
     {
